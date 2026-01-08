@@ -39,10 +39,10 @@ These files implement a complete SSD1306 OLED driver using the AVR’s TWI (I²C
 
 ---
 
-## Hardware Setup (Typical)
+## Hardware Setup
 
 ### OLED (SSD1306, I2C)
-The hardware configuration centers around an AVR development board acting as the system controller. An SSD1306 OLED display is connected via I²C and is used to present player cards, balances, and game prompts. A chain of four MAX7219-driven LED modules is connected over SPI to display numeric values such as the pot size or bet amounts. Player interaction is handled through active-low push buttons with internal pull-up resistors enabled, while a potentiometer connected to the ADC provides analog input for bet sizing or menu navigation. Additional LEDs and a buzzer provide visual and audio feedback for game events.
+The hardware configuration centers around an AVR development board acting as the system controller. Two SSD1306 OLED display is connected via I²C and is used to present each player's cards and balances (They should be hidden from the other person). A chain of four MAX7219-driven LED modules is connected over SPI to display numeric values such as the pot size or bet amounts. Player interaction is handled through active-low push buttons with internal pull-up resistors enabled, while a potentiometer connected to the ADC provides analog input for bet sizing or menu navigation. Additional LEDs and a buzzer provide visual and audio feedback for game events.
 
 ---
 
@@ -56,7 +56,7 @@ The hardware configuration centers around an AVR development board acting as the
 4. Build + flash to your board.
 ---
 
-## How To Play (High Level)
+## How To Play
 
 - Game starts with fixed **starting balance**, **small blind**, **big blind**
 - Players receive hole cards
