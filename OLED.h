@@ -2,7 +2,6 @@
  * OLED.h
  *
  * Created: 11/19/2025 3:12:55 PM
- * Author : ziyan mei
  */ 
 
 #ifndef OLED_H
@@ -27,4 +26,5 @@ const char *card1, const char *card2,
 uint16_t balance);
 
 #endif
+
 
