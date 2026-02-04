@@ -2,7 +2,6 @@
  * OLED.c
  *
  * Created: 11/19/2025 3:12:55 PM
- * Author : ziyan mei
  */ 
 
 #define F_CPU 16000000UL
@@ -158,4 +157,5 @@ const char *card1,const char *card2,uint16_t balance){
 	OLED_print(l2);
 	OLED_update(bus);
 }
+
 
