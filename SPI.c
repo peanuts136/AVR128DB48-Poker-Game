@@ -2,7 +2,6 @@
  * SPI.c
  *
  * Created: 11/19/2025 3:12:55 PM
- * Author : ziyan mei
  */ 
 
 #define F_CPU 16000000UL
@@ -107,5 +106,6 @@ void Matrix_DisplayNumber(uint16_t value)
 
     _delay_ms(150);  // visible update speed
 }
+
 
 
